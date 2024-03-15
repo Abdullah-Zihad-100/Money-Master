@@ -1,13 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <title>Money Master</title>
 </head>
-<body>
-    
+
+<body> <br><br>
+    <div class="flex flex-col lg:flex-row container mx-auto gap-10 items-center">
+        <div>
+            <img src="Screenshot-2022-07-21-154818.webp" alt="">
+        </div>
+        <div class="mx-auto text-center bg-gray-100 flex-1 pb-4 mt-6 px-6">
+            <h3 class="text-xl font-semibold my-3">
+                Income
+            </h3>
+            <label for="income-field">Income:<input id="income-field" type="text"
+                    class="rounded bg-gray-200 outline-none m-2 p-1"></label>
+
+            <h3 class="text-xl font-semibold my-2">
+                Expenses
+            </h3>
+            <label for="food-field" class="block">Food:<input id="food-field" type="text"
+                    class="rounded bg-gray-200 outline-none m-2 p-1"></label>
+            <label class="block" for="rent-field">Rent:<input id="rent-field" type="text"
+                    class="rounded bg-gray-200 outline-none m-2 p-1"></label>
+            <label class="block" for="clothes-field">Clothes:<input id="clothes-field" type="text"
+                    class="rounded bg-gray-200 outline-none m-2 p-1"></label>
+            <button id="calculate-btn" class="px-10 mt-4 py-2 rounded text-white bg-blue-400">Calculate</button>
+
+            <h3 class="text-xl font-semibold my-2">
+                Total Expenses: <span id="total-expenses"></span>
+            </h3>
+            <h3 class="text-xl font-semibold my-2">
+                Balance: <span id="balance"></span>
+            </h3>
+            <br>
+<div>
+    <label for="save-field">Save:<input id="save-field" type="text"
+            class="rounded bg-gray-200 outline-none m-2 p-1 w-[100px] text-center"></label>% <button id="save-btn" class="px-10 mt-4 py-2 rounded text-white bg-blue-400">Save</button>
+            <h3 class="text-xl font-semibold my-2">
+            Saving Amount: <span id="save-amount"></span>
+            </h3>
+            <h3 class="text-xl font-semibold my-2">
+            Remaining Balance: <span id="remaining-balance"></span>
+            </h3>
+            <div>
+</div>
+        </div>
+    </div>
 
     <script src="script/money.js"></script>
+    <script src="script/ulitili.js"></script>
 </body>
+
 </html>
